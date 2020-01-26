@@ -1,0 +1,44 @@
+\section{問題 A}
+1. 複素整数の全体$\Z [i]$は複素数の三則（加・減・乗）に関して閉じている．
+このことを証明せよ．
+
+\注意{}
+複素整数のように代数的に定義された整数に対し，通常の整数$0, \pm 1 ,\pm 2, \cdots$を
+“有理整数”と呼ぶ．複素整数は初等整数論の到達点であると共に，その枠をこえて
+“2次体の整数論”へ進む出発点である．
+
+\証明
+
+$\alpha = a+ib, \beta = c + id$とすれば，複素数の三則により，
+\[
+	\alpha \pm \beta = (a \pm c) + i(b \pm d), \:
+  \alpha \beta (ac-bd)  + i(ad + bd).
+\]
+これらは再び複素整数である．
+\■
+
+（両辺）
+
+
+3. ノルム記号$N$について，次の公式を証明せよ．
+\begin{list}{}{}
+	\item	(1) $N(\alpha\beta) = N(\alpha)N(\beta)$
+	\item (2) $\alpha | \beta$ならば，$N(\alpha) | N(\beta)$
+\end{list}
+\証明
+
+(1) $N(\alpha\beta) = (\alpha\beta)\overline{(\alpha\beta})=\alpha\overline{\alpha}\beta\overline{\beta}=N(\alpha)N(\beta)$.
+
+(2) $\beta = \alpha \gamma$とすれば，$N(\beta) = N(\alpha\gamma)=N(\alpha)N(\gamma)$．$\therefore N(\alpha)|N(\beta)$．
+
+（保留）
+
+9. $3$は Gauss 素数であることを証明せよ．$5$はどうか．
+
+\解 $3=\beta\gamma$（$\beta,\gamma$は単数でない）とすれば，$9=N(\beta)N(\gamma)$.
+$N(\beta)	\ne	1,	N(\gamma)\ne	1$であるから，$N(\beta)	=3$となる．しかるに，
+$x^2 + y^2 = 3$の整数解は存在しないから，このような$\beta = x+iy$は存在しない．
+$\therefore 3$は Gauss 素数である．$5=(2+i)(2-i)$.
+
+他に，$7,11,19$はGauss 素数，$13=(3-2i)(3+2i),	17=(4+i)(4-i)$．
+\■

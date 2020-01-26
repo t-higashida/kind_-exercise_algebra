@@ -1,0 +1,100 @@
+\section{問題 B}
+
+15. Fermat - Euler の素数定理を証明せよ．
+
+\証明
+$p \equiv 1 \mod 4$とすれば，第1補充定理により，$-1$は法$p$に関する平方剰余になる．
+従って，$x^2 + 1 \equiv 0 \mod p$が解を持つ．そこで，$\Z[i]$において，
+\[
+	(x-i)(x+i) \equiv 0 \mod p
+\]
+となる．しかるに，$\Z[i]$における$p$の倍数は，$p\alpha = pa + ipb$の形で，
+その虚部は$pb \ne \pm 1$であるから，
+\[
+	x-i	\not\equiv 0 \mod p, \quad \text{かつ} \quad x +i \not\equiv  0 \mod p.
+\]
+したがって，$p$はEuclid の第1定理
+\footnote{
+$p | ab$（$p$はGauss 素数）ならば，$p|a$または$p|b$の少なくとも一方が成立つ
+}
+をみたさず，Gauss 素数ではありえない．
+
+逆に，$p = \gamma \delta$（$\gamma,\delta$は単数ではない）と分解されたとする．
+ここで，$\gamma$はGauss 素数と仮定しておく．両辺のノルムをとれば，
+\[
+	N(p) = p^2 = N(\gamma)N(\delta).
+\]
+$p$は有理素数であるから，$N(\gamma)=1$，$p$または$p^2$．然るに$N(\gamma) \ne 1, N(\delta) \ne 1$であるから，
+$N(\gamma)=p$．$\therefore p = \gamma\overline{\gamma}$（$\gamma,\overline{\gamma}$は共役な Gauss 素数)．
+\[
+	\therefore p=a^2 + b^2 \quad \text{（$a$，$b$は有理整数）}.
+\]
+従って，$b^2 \equiv -a^2 \mod p$であるから，$-a^2$は法$p$に関する平方剰余になり，また
+\[
+	\left(	\frac{-a^2}{p}
+	\right)
+	=
+	\left(	\frac{-1}{p}
+	\right)
+	\left(	\frac{a}{p}
+	\right)^2
+	=
+	\left(	\frac{-1}{p}
+	\right)^2
+	=
+	\left(	\frac{-1}{p}
+	\right).
+	\quad
+	\therefore
+	\left(
+		\frac{-1}{p}
+	\right)	=1
+\]
+従って，第1補充法則により，$p	\equiv	1	\mod	4.$
+
+
+16. 奇素数$p$（有理素数）について，次のことがらを証明せよ：
+\[
+	p	\equiv -1 \mod 4 \Leftrightarrow \text{$p$は Gauss 素数}
+\]
+
+\証明
+問 15によって証明済みである．
+\■
+
+17. 奇素数$p$について，次のことがらを証明せよ．
+
+(1) $p$が二つの平方数の和として表わされる必要十分条件は，$p	\equiv	1	\mod	4$なることである．
+
+(2) (1)の表わし方$p	=	a^2	+	b^2$は一意的である．
+
+\証明
+
+(1) $p	=	\gamma	\overline{\gamma}$において，$\gamma	=	a	+	ib$と置けば，$p=a^2	+b^2$を得る．
+
+(2) $p=a^2	+	b^2,	p=c^2	+	d^2$と二通りに表わされたとする．両辺を乗じて，
+\[
+	p^2	=	(a^2+b^2)(c^2+d^2)	=	(ac	\pm	bd)^2	+	(ad	\mp	bc)^2	\quad	\text{(複合同順)}
+\]
+しかるに，
+\begin{align*}
+	(ac+bd)(ac-bd)	&=	a^2c^2	-	b^2d^2	=(a^2+b^2)c^2	-	b^2(c^2+d^2)	\\
+									&=	pc^2	-	b^2p	=0	\mod	p.
+\end{align*}
+\[
+	\therefore
+	ac	+	bd	\equiv	0	\mod	p,	\quad	\text{または，}	\quad	ac-bd	\equiv	0	\mod	p.
+\]
+そこで$ac	+	bd	\equiv	0	\mod	p$のときは，複合の上部の符号により，
+\[
+	ac	+	bd	=	p	,	\quad	ad	-	bc	=	0
+\]
+となる．これを$c,d$について解けば，$c=a,	b=d$を得る．
+
+また，$ac-bd	\equiv	\mod	p$のときは，符号の下部の符号により，
+\[
+	ac-bd=0,	\quad	ad	+	bc=p
+\]
+となる．これを$c,d$について解けば，やはり，$c=a	,	b=d$を得る．以上によって，
+$p	=a^2	+b^2$なる表わし方は一意的でなければならない．
+\■

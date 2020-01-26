@@ -1,0 +1,54 @@
+\chapter{Fermat-Eulerの定理}
+
+\subsection{SUMMARY}
+
+20.
+Eulerの関数について，次の事柄を証明せよ：
+\[
+	(m,n)=1	\text{ならば，}	\varphi(mn)	=	\varphi(m)\varphi(n).
+\]
+\textbf{注} \hspace{5pt}
+一般に，正整数$m$に対して定義された関数を\textbf{整数論的関数}という．
+整数論的関数$f$が，条件
+\[
+	f(1)=1;	\quad	(m,n)=1	\text{ならば，}	f(mn)=f(m)f(n)
+\]
+を満たすとき，$f$は\textbf{乗法的}であるという．Eulerの関数$\varphi$は
+乗法的な整数論的関数の典型的な例である．
+
+\証明
+
+(note)
+
+「両辺を$m$で簡約すれば，$k\equiv	h	\:	(	\mod	n	)$を得るが，
+これは不合理（下線部）である．
+\[
+	a	+	km	\equiv	a+	hm	(\mod	n),	0	\leqq	\underline{h	<	k	<	n}
+\]
+(note end)
+
+
+（中保留）
+
+29.
+次の公式を証明せよ：
+\[
+	\sum_{d	|	18}	\varphi(d) = m.	\quad\text{（$d$は$m$の正の約数すべてを動く）}.
+\]
+
+\textbf{考察}\hspace{5pt}
+証明の前に$\displaystyle	\sum_{d | 18} \varphi(d)$について考察しておく．
+\begin{align*}
+	&\varphi(1)	=1,	\quad
+	\varphi(2)=\#\{1\}	=1,\quad
+	\varphi(3)=	\#\{1,2\}=2,	\\
+	&\varphi(6)=\#\{1,5\}=2,\quad
+	\varphi(9)=\#\{1,2,4,5,7,8\}=6,\quad
+	\varphi(18)=\#\{1,5,7,11,13,17\}=6
+\end{align*}
+$0,1,2,\cdots	,	17$の中で$18$の約数$d$に対して
+\[
+	(x,18)	=	g	=	\frac{18}{d}
+\]
+となるような$x$の個数を求める．
+\証明

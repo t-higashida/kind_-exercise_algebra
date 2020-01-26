@@ -1,0 +1,60 @@
+\section{問題A}
+
+（中略）
+
+5.$H,K$が群$G$の部分群ならば，それらの共通部分$H \cap K$も$G$の部分群である．
+このことを証明せよ．
+
+一般に$H_i$が$G$の部分群のとき$\displaystyle	\bigcap_{i\in I } H_i$
+も$G$の部分群である．
+
+\証明
+$H \cap K$の任意の2元$a,b$に対して，$H \cap K \subseteq H$であるから，
+$a,b \in H$となり，問2により，$ab^{-1} \in H$．同様にして，
+$ab^{-1} \in K$．$\therefore ab^{-1} H \cap K$．したがって，
+$H \cap K$は$G$の部分群である．
+
+$x,y \in \displaystyle	\bigcap_{i\in I } H_i$ならば，任意の$i \in I$に対して，
+$x,y \in H_i$となり，問2により$xy^{-1} \in H_i$．
+したがって任意の$i \in I$に対して，$xy^{-1} \in \displaystyle \bigcap_{i \in I} H_i$．
+
+\■
+
+（中略）
+
+
+8. 次の群の各元を巡回置換（またはその積）によって表わせ．また，
+与えられた Hasse の図式に適するような部分群$A,B,C$（順不同）を求めよ．
+
+	(1) $C_4$	　(2) $D_2$	　(3) $C_6$	　(4) $S_3$
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[bb=0 0 800 200,clip,width=12cm,height=3.25cm]{fig_p166.bmp}
+\end{figure}
+
+\解
+
+(1)　$e,	\quad	\:	a	=(1 2 3 4 ), \quad	a^2 = (13)(24), \quad	a^3 = (1 4 3 2)$．
+\[
+	A=\{e,a^2\}
+\] 
+
+(2)　$e,	\quad	\:	a	=(1 3)( 2 4 ), \quad	ab = (12)(34), \quad	c = (1 4)(2 3)$．
+\[
+	A=\{e, a\}, \quad B=\{e,b\}, \quad, C=\{e,c\}
+\]
+
+(3)　$e,	\quad	\:	a	=(1 2 3 4 5 6), \quad	a^2 = (135)(246), \quad	a^3 = (1 4)(2 5)(36),	\quad 
+a^4 = (153)(264) , \quad a^5 = (165432)$．
+\[
+	A=\{e,a^2,a^4\}, \quad B=\{e, a^3\}
+\]
+
+(4)　$e,	\quad	\:	a	=(1 2 3), \quad	b = (132), \quad	c = (1 2),	\quad 
+d = (13) , \quad f = (23)$．
+\[
+	A=\{e,c	\}, \quad B=\{e,d\},	\quad C=\{e,f	\},\quad
+	A_3 =\{e ,	a	,	b\}
+\]
+
+

@@ -1,0 +1,42 @@
+\section{問題A}
+
+1. $H$を群$G$の部分群とするとき，$G$の2元$a,b$に対して，次の3条件は同値であることを証明せよ．
+\[
+	(1) \: Ha = Hb \quad
+	(2) \: a	\in Hb \quad
+	(3) \: ab^{-1} \in H
+\]
+\textbf{注意}
+
+これらの条件（の一つ）が成立つとき，$a$と$b$は$H$に関して左合同であるという．
+これは，整数の加法群$Z$に対して定義された“合同”の概念を乗法群$G$に拡張したものである
+（\S 3 参照）．なお，以下の問題は右剰余類に対しても同様に成立つ．
+
+\証明
+
+(1) $\Rightarrow$ (2)：$a = ea \in Ha = Hb, \quad \therefore a \in Hb$．
+
+(2) $\Rightarrow$ (3)：$a \in Hb$ならば，$a =hb \: (h \in H)$と置ける．従って，
+\[
+	ab^{-1} = (hb)b^{-1} = h(bb^{-1}) = h \in H. \quad \therefore ab^{-1} \in H.
+\]
+
+(3) $\Rightarrow$ (1)：$ab^{-1} \in H$ならば，$ab^{-1} = h \: (h \in H)$と置ける．従って，
+\[
+	a=hb. \therefore Ha = Hhb = Hb.
+\]
+\■
+
+（中略）
+
+
+3. $H$を群$G$の部分群とするとき，$G$の任意の2元$a,b$に対して，
+\[
+	Ha = Hb \quad \text{または} Ha \cap Hb = \varnothing
+\]
+のいずれか一方が成立つ，このことを証明せよ．
+
+\証明
+もし，$c \in Ha \cap Hb$とすれば，$c \in Ha$より，$Hc = Ha$．また，$c \in Hb$より，
+$Hc = Hb$．$\therefore Ha = Hb$．
+\■

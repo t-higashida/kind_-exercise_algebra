@@ -1,0 +1,73 @@
+\section{問題 A}
+
+（中略）
+
+3. 集合$\{1,2,3\}$上の6個の置換について，次の乗積表を完成させよ．
+\begin{align*}
+	e	=	\begin{pmatrix}
+				1	&	2	&	3	\\
+				1	&	2	&	3
+			\end{pmatrix},
+&&	a	=	\begin{pmatrix}
+				1	&	2	&	3	\\
+				2	&	3	&	1
+			\end{pmatrix},
+&&	b	=	\begin{pmatrix}
+				1	&	2	&	3	\\
+				3	&	2	&	1
+			\end{pmatrix},	\\
+	c	=	\begin{pmatrix}
+				1	&	2	&	3	\\
+				2	&	1	&	3
+			\end{pmatrix},
+&&	d	=	\begin{pmatrix}
+				1	&	2	&	3	\\
+				3	&	2	&	1
+			\end{pmatrix},
+&&	f	=	\begin{pmatrix}
+				1	&	2	&	3	\\
+				1	&	3	&	2
+			\end{pmatrix}.
+\end{align*}
+
+\解
+
+\[
+	\begin{array}{c|cccccc}
+			& e	&	a	&	b	&	c	&	d	&	f	\\	\hline
+		e	&	e	&	a	&	b	&	c	&	d	&	f	\\
+		a	&	a	&	b	&	e	&	f	&	c	&	d	\\
+		b	& b	&	e	&	a	&	d	&	f	&	c	\\
+		c	&	c	&	d	&	f	&	e	&	a	&	b	\\
+		d	&	d	&	f	&	c	&	b	&	e	&	a	\\
+		f	&	f	&	c	&	d	&	a	&	b	&	e	\\
+	\end{array}.
+\]
+$a,b$を生成元とする群$G$で，$a,b$の間には$a^2=b^2	=	1,	aba=bab$
+という関係が成立っているとする．
+\[
+	G=	\{	1	,	a,	b	,	ab,	ba	,	aba	\},
+	\quad
+	|G|=6.
+\]
+このとき，演算表は
+\[
+	\begin{array}{c|cccccc}
+				& 1		&	a		&	b		&	ab	&	ba	&	aba	\\	\hline
+		1		&	1		&	a		&	b		&	ab	&	ba	&	aba	\\
+		a		&	a		&	1		&	ab	&	b		&	aba	&	ba	\\
+		b		& b		&	ab	&	1		&	aba	&	a		&	ab	\\
+		ab	&	ab	&	aba	&	a		&	ba	&	1		&	b		\\
+		ba	&	ba	&	b		&	aba	&	1		&	ab	&	a		\\
+		aba	&	aba	&	ab	&	ba	&	a		&	b		&	1
+	\end{array}.
+\]
+となり，$S_3$と同型となる．
+
+\textbf{注}. 上記6個の置換をそれぞれ巡回置換で表わせば，
+\begin{align*}
+	e=(1),	a=(123),	b=(132),	\\
+	c=(12),	d=(13),	f=(23).
+\end{align*}
+なお，3次の対称群$S_3$は位数最小の非可換群として特徴的である．積$ab$の順序は，
+“First $a$, and then $b$”である．
